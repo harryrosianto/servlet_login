@@ -11,7 +11,7 @@ To create a Java Servlet for login using NetBeans with a Microsoft SQL Server da
 Ensure you have the database and table set up. Here's an example SQL script for your table:
 
 
-```
+```sql
 CREATE DATABASE students_info;
 USE students_info;
 CREATE TABLE dbo.student_login (
@@ -21,7 +21,7 @@ CREATE TABLE dbo.student_login (
 ```
 
 
-## 2. Create a New Project in NetBeans
+#### 2. Create a New Project in NetBeans
 1. Open NetBeans.
 2. Go to `File` -> `New Project`.
 3. Choose `Java Web` -> `Web Application` and click `Next`.
@@ -76,7 +76,6 @@ Replace `<server>`, `<port>`, `<your-username>`, and `<your-password>` with your
 
 #### 6. Implement the Servlet Code
 Modify the servlet to handle login requests:
-
 
 ```java
 package com.example;
