@@ -1,0 +1,23 @@
+# LoginServletApp
+
+This project is a simple Java Servlet application for user login, using NetBeans IDE and Microsoft SQL Server.
+
+## Prerequisites
+
+1. **NetBeans IDE** with Java EE support.
+2. **Microsoft SQL Server** with the database `students_info` and table `dbo.student_login`.
+3. **JDBC Driver for SQL Server**.
+
+## Database Setup
+
+Ensure you have the database and table set up. Here is an example SQL script for your table:
+
+```sql
+CREATE DATABASE students_info;
+
+USE students_info;
+
+CREATE TABLE dbo.student_login (
+    username VARCHAR(50) PRIMARY KEY,
+    userpassword VARCHAR(50)
+);
