@@ -2,15 +2,15 @@ To create a Java Servlet for login using NetBeans with a Microsoft SQL Server da
 
 
 ### Prerequisites
-1. **NetBeans IDE** with Java EE support.
-2. **Microsoft SQL Server** with the database `students_info` and table `dbo.student_login`.
-3. **JDBC Driver for SQL Server**. You can download it from the Microsoft website.
+1. NetBeans IDE with Java EE support.
+2. Microsoft SQL Server with the database `students_info` and table `dbo.student_login`.
+3. JDBC Driver for SQL Server. You can download it from the Microsoft website.
 
 
 ### Steps
 
 
-#### 1. **Set Up the Database**
+#### 1. Set Up the Database
 Ensure you have the database and table set up. Here's an example SQL script for your table:
 
 
@@ -28,7 +28,7 @@ CREATE TABLE dbo.student_login (
 ```
 
 
-#### 2. **Create a New Project in NetBeans**
+#### 2. Create a New Project in NetBeans
 1. Open NetBeans.
 2. Go to `File` -> `New Project`.
 3. Choose `Java Web` -> `Web Application` and click `Next`.
@@ -36,7 +36,7 @@ CREATE TABLE dbo.student_login (
 5. Choose your server (e.g., Apache Tomcat) and Java EE version, then click `Finish`.
 
 
-#### 3. **Add JDBC Driver to Project**
+#### 3. Add JDBC Driver to Project
 1. Right-click on your project in the `Projects` pane.
 2. Go to `Properties` -> `Libraries`.
 3. Click `Add Library` -> `New Library`.
@@ -44,7 +44,7 @@ CREATE TABLE dbo.student_login (
 5. Click `Add JAR/Folder` and add the JDBC driver JAR file you downloaded.
 
 
-#### 4. **Configure Database Connection**
+#### 4. Configure Database Connection
 1. Create a `DBConnection` class to handle database connections.
 
 
@@ -75,13 +75,13 @@ public class DBConnection {
 Replace `<server>`, `<port>`, `<your-username>`, and `<your-password>` with your SQL Server details.
 
 
-#### 5. **Create the Servlet**
+#### 5. Create the Servlet
 1. Right-click on the `Source Packages` in the `Projects` pane.
 2. Select `New` -> `Servlet`.
 3. Name your servlet (e.g., `LoginServlet`) and specify the package (e.g., `com.example`).
 
 
-#### 6. **Implement the Servlet Code**
+#### 6. Implement the Servlet Code
 Modify the servlet to handle login requests:
 
 
@@ -141,7 +141,7 @@ public class LoginServlet extends HttpServlet {
 ```
 
 
-#### 7. **Create the Login Form**
+#### 7. Create the Login Form
 1. Right-click on the `Web Pages` folder.
 2. Select `New` -> `HTML`.
 3. Name it `login.html`.
@@ -167,7 +167,7 @@ public class LoginServlet extends HttpServlet {
 ```
 
 
-#### 8. **Run the Project**
+#### 8. Run the Project
 1. Right-click on your project.
 2. Select `Run`.
 3. Open the login page (e.g., `http://localhost:8080/LoginServletApp/login.html`).
